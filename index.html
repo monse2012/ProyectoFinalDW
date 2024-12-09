@@ -13,15 +13,14 @@
       font-family: Arial, sans-serif;
       padding: 10px;
       background: rgb(255, 230, 0);
-      color: white; /* Texto blanco por defecto */
+      color: white;
     }
 
-    /* Header/Blog Title */
     .header {
       padding: 30px;
       text-align: center;
-      background: white; /* Fondo blanco */
-      color: black; /* Texto negro */
+      background: white;
+      color: black;
     }
 
     .header h1 {
@@ -31,10 +30,9 @@
 
     .header p {
       font-size: 20px;
-      color: black; /* Texto negro en el header */
+      color: black;
     }
 
-    /* Style the top navigation bar */
     .topnav {
       overflow: hidden;
       background-color: #2c3e50;
@@ -43,7 +41,7 @@
     .topnav a {
       float: left;
       display: block;
-      color: #f2f2f2; /* Texto blanco */
+      color: #f2f2f2;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
@@ -97,7 +95,6 @@
       display: block;
     }
 
-    /* Create two unequal columns */
     .leftcolumn {
       float: left;
       width: 75%;
@@ -106,20 +103,10 @@
     .rightcolumn {
       float: left;
       width: 25%;
-      background-color: rgb(255, 230, 0); /* Fondo oscuro */
+      background-color: rgb(255, 230, 0);
       padding-left: 20px;
     }
 
-    .fakeimg {
-      background-color: white;
-      width: 100%;
-      height: 300px;
-      margin-bottom: 20px;
-      background-size: cover;
-      object-position: center;
-    }
-
-    /* Add a card effect for items */
     .card {
       background-color: #2c3e50;
       padding: 20px;
@@ -134,21 +121,26 @@
 
     .card a {
       text-decoration: none;
-      color: #f2f2f2; /* Texto blanco */
+      color: #f2f2f2;
     }
 
     .card p {
-      color: white; /* Texto blanco dentro de las tarjetas */
+      color: white;
     }
 
-    /* Clear floats after the columns */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
     .row::after {
       content: "";
       display: table;
       clear: both;
     }
 
-    /* Footer */
     .footer {
       padding: 20px;
       text-align: center;
@@ -158,11 +150,9 @@
     }
 
     .footer p {
-      color: white
-      ; /* Texto negro en el pie de página */
+      color: white;
     }
 
-    /* Responsive layout */
     @media screen and (max-width: 800px) {
       .leftcolumn, .rightcolumn {
         width: 100%;
@@ -185,7 +175,6 @@
     <p>La tienda online para consentir a tu mascota</p>
   </div>
 
-  <!-- Navigation Bar -->
   <div class="topnav">
     <a href="https://monse2012.github.io/catalagojuguetes/">Juguetes</a>
     <div class="dropdown">
@@ -198,24 +187,20 @@
   </div>
 
   <div class="row">
-    <!-- Left Column (Main Content) -->
     <div class="leftcolumn">
       <div class="card" id="alimentos">
         <h2>Alimentos para Perros y Gatos</h2>
-        <img src="IMG/alimentos.jpeg" alt="Alimentos" style="width: 850px; height: 400px;">
+        <img src="IMG/alimentos.jpeg" alt="Alimentos">
         <p>Encuentra los mejores alimentos para tu mascota. Ya sea para perros o gatos. Ofrecemos productos de alta calidad, diseñados para cada etapa de la vida de tu mascota, desde cachorros hasta adultos mayores.</p>
         <a href="https://monse2012.github.io/alimentosproductos/">Ver más productos</a>
       </div>
 
       <div class="card" id="aseo">
         <h2>Artículos de Aseo</h2>
-        <img src="IMG/aseo.jpeg" alt="Artículos de Aseo" style="width: 850px; height: 400px;">
+        <img src="IMG/aseo.jpeg" alt="Artículos de Aseo">
         <p>Cuidar la higiene de tu mascota nunca fue tan fácil. Contamos con productos de aseo de alta gama para darle un baño puro a tus mascotas, tenemos cepillos especiales hasta champú hipoalergénico, para que siempre luzcan impecables y con ganas de apapacharlos.</p>
-        <a href="https://monse2012.github.io/articulosaseo/
-        
-        ">Ver más productos</a>
+        <a href="https://monse2012.github.io/articulosaseo/">Ver más productos</a>
       </div>
-
       <div class="card" id="consejos">
         <h2>Consejos para el Cuidado de Mascotas</h2>
         <p>Proporciona alimentos de calidad diseñados específicamente para la especie, raza, tamaño y edad de tu mascota.</p>
@@ -224,38 +209,36 @@
         <p>Mantén limpios sus oídos y corta sus uñas según sea necesario.</p>
         <p>Proporciona juguetes interactivos a gatos y perros para estimular su actividad física y mental.</p>
         <p>Cepilla los dientes de tu mascota regularmente con productos especiales para ellos.</p>
-      </div>
-    </div>
-
-    <!-- Right Column (Sidebar) -->
-    <div class="rightcolumn">
-      <div class="card">
-        <h2>Sobre Nosotros</h2>
-      <a href="Nosotros.jpg"><img src="IMG/logoweb.png" alt="Sobre Nosotros" style="width: 250px; height: 220px;"></a>
-        <p>El Ladrido Amigo es la tienda perfecta para consentir a tus compañeros de cuatro patas. Especializada en artículos para gatos y perros, ofrecemos un catálogo que incluye juguetes divertidos, alimentos, ropa adorable y accesorios prácticos para el día a día. ¡Somos tu mejor opción!</p>
-      </div>
-
-      <div class="card">
-        <h3>Publicaciones Populares</h3>
-        <img src="IMG/05.jpg" alt="Publicación Popular 1" style="width: 245px; height: 230px;">
-        <img src="IMG/BG.jpg" alt="Publicación Popular 2" style="width: 245px; height: 230px;">
-        <img src="IMG/LD.jpeg" alt="Publicación Popular 3" style="width: 245px; height: 230px;">
-      </div>
-
-      <div class="card">
-        <h3>Para más información: </h3>
-        <p>¡Síguenos en nuestras redes sociales para estar al tanto de promociones exclusivas, consejos útiles y novedades sobre nuestros productos! Encontrarás contenido divertido, informativo y muchas sorpresas para ti y tu mascota.</p>
-        <ul>
-          <li><a href="#">Facebook: @ElLadridoAmigo</a></li>
-          <li><a href="#">Instagram: @el_ladrido_amigo</a></li>
-          <li><a href="#">Twitter: @LadridoAmigo</a></li>
-        </ul>
-      </div>
     </div>
   </div>
 
-   <!-- Footer -->
-   <div class="footer">
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Sobre Nosotros</h2>
+    <a href="Nosotros.jpg"><img src="IMG/logoweb.png" alt="Sobre Nosotros" style="width: 250px; height: 220px;"></a>
+      <p>El Ladrido Amigo es la tienda perfecta para consentir a tus compañeros de cuatro patas. Especializada en artículos para gatos y perros, ofrecemos un catálogo que incluye juguetes divertidos, alimentos, ropa adorable y accesorios prácticos para el día a día. ¡Somos tu mejor opción!</p>
+    </div>
+
+    <div class="card">
+      <h3>Publicaciones Populares</h3>
+      <img src="IMG/Nosotros.jpg" alt="Publicación Popular 1" style="width: 245px; height: 230px;">
+      <img src="IMG/BG.jpg" alt="Publicación Popular 2" style="width: 245px; height: 230px;">
+      <img src="IMG/LD.jpeg" alt="Publicación Popular 3" style="width: 245px; height: 230px;">
+    </div>
+
+    <div class="card">
+      <h3>Para más información: </h3>
+      <p>¡Síguenos en nuestras redes sociales para estar al tanto de promociones exclusivas, consejos útiles y novedades sobre nuestros productos! Encontrarás contenido divertido, informativo y muchas sorpresas para ti y tu mascota.</p>
+      <ul>
+        <li><a href="#">Facebook: @ElLadridoAmigo</a></li>
+        <li><a href="#">Instagram: @el_ladrido_amigo</a></li>
+        <li><a href="#">Twitter: @LadridoAmigo</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="footer">
     <p>&copy; 2024 El Ladrido Amigo | Todos los derechos reservados</p>
     <p>Dirección: Av. Siempre Viva 123, Colonia Mascotas Felices, Ciudad Petland, CP 12345</p>
     <p>Teléfono: +52 55 1234 5678</p>
@@ -264,5 +247,3 @@
 
 </body>
 </html>
-
-
